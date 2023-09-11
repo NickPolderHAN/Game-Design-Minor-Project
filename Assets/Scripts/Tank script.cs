@@ -25,6 +25,7 @@ public class Tankscript : MonoBehaviour
         else if (laserType == "shot fired")
         {
             _shotRay = new Ray(transform.position, transform.right);
+            Debug.DrawRay(_ray.origin, transform.right * 100f, Color.red, 1f);
             CheckShotColliders();
         }
     }
